@@ -1,0 +1,59 @@
+<html> 
+    <head>
+        <title>Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/@wcj/dark-mode"></script>
+    </head>
+    <label for="numberA">Enter First Number: </label> <input type="text" id="numberA" name="numberA">
+    <br>
+    <label for="numberB">Enter Second Number: </label> <input type="text" id="numberB" name="numberB">
+    <br>
+    <button type="button" onclick="multiplyXY()" class="button button1">Multiply</button>
+    <button type="button" onclick="subtractXY()" class="button button2">Subtract</button>
+    <button type="button" onclick="divideXY()" class="button button3">Divide</button>
+    <button type="button" onclick="addXY()" class="button button4">Add</button>
+    <br>
+    <br>
+    <p id="demo">the result will appear here</p>
+    <script>
+        function multiplyXY() {
+         var a = document.getElementById("numberA").value;
+        var b = document.getElementById("numberB").value;
+        var answer = a*b;
+            document.getElementById("demo").innerHTML = "the answer is " + answer;
+        }
+        </script>
+     <script>
+        function subtractXY() {
+         var a = document.getElementById("numberA").value;
+        var b = document.getElementById("numberB").value;
+        var answer = a-b;
+            document.getElementById("demo").innerHTML = "the answer is " + answer;
+        }
+        </script>
+      <script>
+        function divideXY() {
+         var a = document.getElementById("numberA").value;
+        var b = document.getElementById("numberB").value;
+        var answer = a/b;
+            document.getElementById("demo").innerHTML = "the answer is " + answer;
+        }
+        </script>
+     <script>
+        function addXY() {
+         var a = parseInt( document.getElementById("numberA").value);
+        var b = parseInt( document.getElementById("numberB").value);
+        var answer = a + b;
+            document.getElementById("demo").innerHTML = "the answer is " + answer;
+        }
+        </script>
+    <br>
+    <br>
+    <a href="https://daleksupreme1.github.io/"><button class="button button1">back</button></a>
+    <br>
+    <dark-mode dark="Dark" light="Light"></dark-mode>
+</html>
+
