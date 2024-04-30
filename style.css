@@ -60,16 +60,6 @@ body{
     color: white;
 }
 
-.hi {
-     background-color: white; 
-    color: black; 
-    border: 2px solid rgb: 220, 10, 10;
-    margin: 10000px 0 0 0;
-}
-.hi:hover {
-     background-color: #9d00ff;
-    color: white; 
-}
 
 
 input[type=text], select {
