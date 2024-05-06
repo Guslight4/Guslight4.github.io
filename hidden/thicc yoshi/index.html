@@ -8,6 +8,16 @@
         <link rel="icon" type="image/x-icon" href="image.png">
         <script src="https://unpkg.com/@wcj/dark-mode"></script>
     </head>
+    <audio id="player" autoplay loop>
+    <source src="Yoshis Story Theme.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        document.addEventListener('click', musicPlay);
+        function musicPlay() {
+            document.getElementById('player').play();
+            document.removeEventListener('click', musicPlay);
+        }
+    </script>
     <body>
         <h1>Thicc yoshi good</h1>
         <p>Thicc yoshi is a reconstruction of lost cover art for mario RPG</p>
